@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseny+</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+
+<script>
+
+    /*아코디언 질문 창*/
+    $(document).ready(function(){
+        
+        
+        $('.slider').bxSlider({
+        auto: true,
+        autoControls: true,
+        stopAutoOnClick: true,
+        pager: true,
+        controls: true,
+        minSlides:1,
+        maxSlides:1,
+        //slideWidth: 600
+        });
+
+        $('.acco').each(function(){
+
+        var dt =  $(this).find('dt')
+
+        dt.click(function(){
+        $('.acco dd').stop().slideUp();
+        $(this).next().stop().slideDown();
+
+        $('.acco dt').removeClass('open');
+        $(this).addClass('open');
+
+});
+});
+    });
+</script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1><img src="img/logo.png"></h1>
+
+            <h2>이 모든 이야기가 여기에</h2>
+
+            <div class="form_container">
+                <input type="email" placeholder="E-mail 주소를 입력하세요">
+                
+                <button type="submit">구독하기</button>
+            </div>
+        </header>
+
+        <main>
+        <section id="sec01">
+            <div class="inner">
+                <h2>모두가 디즈니+를 쓰는 이유</h2>
+
+                <div class="slider">
+
+                    <div class="con"> 
+                        <img src="img/banner1.png" alt="배너이미지1">
+                        <div class="text">
+                            <h3>디즈니+에서만 볼 수 있는 오리지널 시리즈 !</h2>
+                            <p>다른 어디에서도 볼 수 없는 디즈니+ 오리지널 시리즈와 디즈니,
+                                픽사, 마블, 스타워즈의 최고 인기 영화도 마음껏 즐길 수 있습니다.
+                            </p>
+                            </div>
+                    </div>
+
+                    <div class="con"> 
+                        <img src="img/banner2.png" alt="배너이미지2">
+                        <div class="text">
+                            <h3>다양한 콘텐츠를 마음껏 저장하여 언제든지 !</h2>
+                            <p>최대 10대의 기기에서 원하는 콘텐츠를 자유롭게 저장하세요. 
+                                100편이 넘는 작품을 고화질 4K UHD 및 HDR로 시청할 수 있습니다. 
+                                강력한 시청 제한 기능으로 온 가족이 안전하게 이용할 수 있으며, 
+                                서로 떨어져 있을 때에도 GroupWatch로 함께 스트리밍할 수 있습니다.
+                            </p>
+                            </div>
+                    </div>
+
+                    <div class="con"> 
+                        <img src="img/banner3.png" alt="배너이미지3">
+                        <div class="text">
+                            <h3>더 짜릿하게, 더 감동적으로, 무한한 Star의 세상 !</h2>
+                            <p>디즈니+에서 Star와 함께 새로운 엔터테인먼트의 세계를 경험해 보세요. 
+                                Star는 어른을 위한 시리즈와 영화를 포함해 모든 취향을 고려한 다양한 콘텐츠를 제공합니다. 
+                            </p>
+                            </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="sec02">
+            <div class="inner">
+                <div class="text1">
+                    <h2>최대 4대의 기기에서 동시 스트리밍</h2>
+
+                    <p>언제 어디서든 즐겨 사용하는<br>최대 4대의 기기에서 동시 스트리밍 가능</p>
+                </div>
+                <img src="img/device.png">
+            </div>
+
+                <div class="bg_color">
+                <h2 class="text2">취향에 따라 골라보는 다양한 콘텐츠가 모두 한자리에<br>
+                    
+                <span>디즈니+는 디즈니, 픽사, 마블 , 스타워즈, 내셔널 지오그래픽,<br>
+                    Star의 최고 콘텐츠를 모두 한곳에 모아 제공합니다.</span>
+                </h2>
+            </div>
+
+
+        </section>
+
+        <section id="sec03">
+            <div class="inner">
+                <h2>매주 공개되는 새로운 신작들부터<br>
+                단독공개 콘텐츠까지<br><br>
+                지금 스트리밍 해보세요</h2>
+            </div>
+        </section>
+
+        <section id="sec04">
+            <div class="inner">
+
+                <div class="mo_img"></div>
+
+                <div class="submit">
+                    <h2>이 모든걸 월 9,900원<br>
+                    연 99,000원에 만나 보세요</h2>
+                    <p>*연간 구독 시 최대 16% 할인된 가격</p>
+
+                    <h3><a href="#">지금 바로 구독하기</a></h3>
+                </div>
+
+                <img src="img/frozen.png">
+
+            </div>
+        </section>
+
+        <section id="sec05">
+            <div class="inner">
+                <h2>자주 묻는 질문</h2>
+
+                <div class="acco">
+                    <dl>
+                        <dt class="open">디즈니+는 무엇인가요?</dt>
+                        <dd>디즈니+는 디즈니, 픽사, 마블, 스타워즈, 내셔널지오그래픽, Star의 콘텐츠를 모두 즐길 수 있는 곳입니다. 
+                            최신 공개작부터 시대를 초월한 명작과 독점 오리지널에 이르기까지 다양하고 풍성한 콘텐츠를 광고 없이 스트리밍할 수 있습니다.</dd>
+
+                        <dt>디즈니+에서는 무엇을 제공 하나요?</dt>
+                        <dd>디즈니+는 다음을 제공합니다.<br><br>
+
+                            - 광고 없는 탁월한 시청 경험<br>
+                            - 최대 10대의 기기에 원하는 콘텐츠 마음껏 저장<br>
+                            - 300편이 넘는 작품 고화질 4K UHD 및 HDR로 시청<br>
+                            - 추가 요금 없이 최대 4대의 기기에서 동시 스트리밍</p></dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
