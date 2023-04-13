@@ -25,7 +25,10 @@ a{
     width: 1080px;
     margin: 0 auto;
 }
-
+#wrap{
+    width: 100%;
+    overflow-x: hidden;
+}
 /***********************************************/
 /*****************  header   ****************/
 
@@ -108,17 +111,12 @@ header .form_container button:hover{
         height: 450px;
         display: flex;
     }
-    .slider div>img{
-        width: 400px;
-        height: 400px;
-    }
     .slider .text{
         width: 680px;
         padding-top: 70px;
     }
-
     .slider h3{
-        width: 600px;
+        width: 90%;
         background-color: #110636;
         border-radius: 100px;
         padding: 20px;
@@ -136,7 +134,7 @@ header .form_container button:hover{
 
 #sec02{
     width: 100%;
-    height: 1115px;
+    height: 1100px;
     text-align: center;
     background: radial-gradient(#2B85B7,#001927);
 }
@@ -292,7 +290,7 @@ footer{
 
     /*header*/
     header{
-        width: 500px;
+        width: 100%;
         height: 708px;
         background-image: url(../img/headerimg_mobile.jpg);
         background-repeat: no-repeat;
@@ -321,6 +319,9 @@ footer{
         width: 100%;
         height: 1000px;
     }
+    #sec01 h2{
+        font-size: 1.5rem;
+    }
     .bx-wrapper{
         height: 800px;
     }
@@ -333,6 +334,9 @@ footer{
             /* display: flex; */
             padding: 25px 0;
         }
+        .slider div>img{
+            width: 100%;
+        }
         .slider .con{
             width: 100%;
             height: 800px;
@@ -341,31 +345,36 @@ footer{
             padding-top: 100px;
         }
         .slider .text{
-            width: 400px;
+            width: 99%;
             padding-top: 70px;
         }
         .bx-controls-direction{display: none;}
         .slider h3{
-            width: 400px;
+            width: 100%;
             background-color: #110636;
             border-radius: 100px;
             padding: 10px;
             text-align: center;
             color: #fff;
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
         .slider p{
-            width: 400px;
-            padding: 0px;
+            width: 100%;
+            padding-top: 50px;
             line-height: 2;
             font-size: 1rem;
         }
     /*sec02*/
 
     #sec02 h2{
-        width: 280px;
+        width: 70%;
         margin: 0 auto;
-        font-size: 1.9rem;
+        font-size: 1.5rem;
+    }
+    #sec02 .text2{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.5rem;
     }
     #sec02 .text2{
         padding-top: 50px;
@@ -383,9 +392,8 @@ footer{
     }
     #sec02 span{
         font-size: 1rem;
-        width: 500px;
+        width: 95%;
         position: relative;
-        left: -110px;
     }
 
     /*sec03*/
@@ -407,9 +415,8 @@ footer{
     /*sec04*/
 
     #sec04 .inner{
-        width: 80%;
+        width: 100%;
         height: 700px;
-        margin-left: 50px;
         display: block;
     }
     #sec04 img{
@@ -426,16 +433,29 @@ footer{
         padding-top: 50px;
     }
     #sec04 .submit h2{
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 
     /*sec05*/
     #sec05{
-        height: 480px;
+        height: 580px;
+    }
+    #sec05 h2{
+        font-size: 1.5rem;
     }
     #sec05 .acco{
         width: 100%;
         height: 100%;
     }
-
+    #sec05 .acco dt{
+        width: 100%;
+        height: 60px;
+        background-color: #020D1F;
+        background-image: url(../img/arrow.png);
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-position: 95%;
+        font-size: 1rem;
+        padding-left: 25px;
+    }
 }
